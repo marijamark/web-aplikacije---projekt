@@ -1,0 +1,277 @@
+body, html {
+	font-family: 'Open Sans';
+	margin: 0;
+	font-size: 16px;
+	/*background-color: #ffff99; stock */
+	background-color: #EFEBE9;
+}
+
+/*klasa za clear floatanih elemnata*/
+.clear{
+	clear: both;
+}
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+header {
+	display: block;
+	width: 100%;
+}
+.hero-image {
+	background-image: url("img/hotcoffe.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 460px;
+}
+nav{
+	background: #4E342E;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background: #4E342E;
+}
+li {
+	float: left;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover {
+	background-color: #715c57;
+}
+.page_h1{
+	text-align: center;
+	font-family: Goudy Old Style, serif;
+	font-size: 70px;
+	margin-top: 0px;
+}
+
+h1,h2 {
+	color: #333;
+	margin: 0.5em;
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.5em;
+	color: #311f1c;
+}
+div{
+	box-sizing: border-box;
+}
+main .container{
+	padding: 25px 15px;
+    box-shadow: 0px 2px 4px #ddd;
+    background: #f3f1ef;
+}
+main a {
+	color: #27318b;
+	text-decoration: none;
+}
+main a:hover {
+	color: #8b3727;
+	text-decoration: underline;
+}
+p {
+	font-weight: 600;
+	color: #333;
+	margin: 1em 0;
+	line-height: 1.4em;
+	letter-spacing: 1px;
+}
+hr {
+	margin: 1em;
+	border: 1px dotted #27318b;
+	clear: both;
+}
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.news h2 {
+	margin: 0.5em 0.7em;
+	font-size: 1.5em;
+	color: #311f1c;
+}
+.news hr {
+	margin: 1em;
+	border: 1px dotted #27318b;
+	clear: both;
+}
+.news time {
+	font-size: 90%;
+	font-style: italic;
+}
+.news-item{
+	height: 160px;
+	border: 1px solid #ddd;
+	border-radius: 7px;
+	margin-bottom: 20px;
+}
+.news-item img{
+	height: 100%;
+	object-fit: cover;
+	width: 20%;
+	float: left;
+	margin-right: 20px;
+}
+.time{
+	font-size: 13px;
+}
+.description {
+	font-weight: bold;
+	margin: 0.8em 1em 1.5em 1em;
+}
+#news_gallery figure {
+	padding: 0.5em;
+	margin: 0 1em 0.5em 1em;
+	float: left;
+	width: 10%;
+	border: 1px solid black;
+}
+/*gallery*/
+div.image-wrap {
+	width: 50%;
+  	float: left;
+  	padding: 10px;
+}
+
+div.gallery{
+	border: 1px solid #ccc;
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+/*gallery*/
+figure {
+	padding: 0.5em;
+	margin: 0 1em 0.5em 1em;
+	float: right;
+	width: 35%;
+	border: 1px solid #ddd;
+	border-radius: 7px;
+}
+figure img{
+	width: 100%;
+}
+figcaption {
+	font-size: 90%;
+}
+video {
+	margin: 0 1em 1em 1em;
+	float: left;
+}
+#contact {
+	margin: 1em
+}
+form{
+	padding-bottom: 20px;
+}
+label {
+	display: block;
+}
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 95%;
+}
+
+input[type=submit] {
+    display: block;
+	background-color: #795548;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	width: 25%;
+	margin: 0 auto;
+}
+
+input[type=submit]:hover {
+    background-color: #6D4C41;
+}
+#location{
+	border: 2px solid #BCAAA4;
+}
+footer {
+	background-color: #3E2723;
+	padding: 0.1em;
+	clear: both;
+}
+footer p {
+	font-size: 12px;
+	color: white;
+	text-align: center;
+	margin: 20px;
+}
+footer img {
+	width: 20px;
+}
+
+@media screen and (max-width: 900px) {
+	figure {
+		width: 90%;
+		margin: 1em;
+	}
+	.news img {
+		width: 95%;
+		padding: 0.5em;
+		margin: 0 1em 0.5em 0.5em;
+	}
+	.news time {
+		margin: 0 0 0 1em;
+	}
+	#news_gallery figure {
+		padding: 0.5em;
+		margin: 0 1em 0.5em 1em;
+		float: left;
+		width: 90%;
+		border: 1px solid black;
+	}
+	#news_gallery figcaption {
+		font-size: 90%;
+		text-align: center;
+	}
+	#gallery figure {
+		padding: 0.5em;
+		margin: 0 1em 0.5em 1em;
+		float: left;
+		width: 40%;
+		border: 1px solid black;
+	}
+	#gallery figcaption {
+		font-size: 90%;
+		height: 70px;
+		text-align: center;
+	}
+}
